@@ -5,7 +5,7 @@ import { signOut, useSession } from 'next-auth/react';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 import Image from 'next/image';
-export default function Layout({ title, children, serach, setSerach }) {
+export default function Layout({ title, children, serach, setSearch }) {
   const { status, data: session } = useSession();
 
   const logoutClickHandler = () => {
@@ -101,4 +101,4 @@ export default function Layout({ title, children, serach, setSerach }) {
       </footer>
     </>
   );
-}
+  }
